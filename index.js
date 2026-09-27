@@ -6,13 +6,13 @@ const axios = require("axios");
 // ==========================================
 // CONFIGURASI
 // ==========================================
-const BOT_TOKEN = "8766808706:AAHFE3HcKo1aoeveirkmIT8m8N0kUzxqmgU";
+const BOT_TOKEN = process.env.BOT_TOKEN;
 const OWNER_ID = 7532503121; // Ganti dengan ID Telegram kamu
 const USERNAME = "root";
 
 // Satu-satunya grup yang boleh dipakai untuk /createvps.
 // Private chat bot TIDAK PERNAH boleh dipakai untuk create VPS, tanpa pengecualian (termasuk owner).
-const ALLOWED_GROUP_ID = "-5432106276";
+const ALLOWED_GROUP_ID = "-1003077723795";
 
 const RAILWAY_API_URL = "https://backboard.railway.com/graphql/v2";
 const CATCHMAIL_API_URL = "https://api.catchmail.io/api/v1";
